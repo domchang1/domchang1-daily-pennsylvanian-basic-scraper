@@ -1,3 +1,7 @@
+# Modified Scraper
+
+In my modification, I made it so the scraper retrieves the most recent story from the "Most Recent" section of the homepage on the DP's website. To do so, I had to first find the "Most Recent" section on the main page (which had a unique class tag), then from that div look for the first occurrence of the class tag representing the stories. From there, I had to look inside that div to find the link with the headline as its text body. The reason I had to do all of this was because of the nested nature of the divs and having to look through many layers to find the text I needed.
+
 # Basic Git Scraper Template
 
 This template provides a starting point for **git scraping**—the technique of scraping data from websites and automatically committing it to a Git repository using workflows, [coined by Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/).
